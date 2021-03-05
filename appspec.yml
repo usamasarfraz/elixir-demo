@@ -1,0 +1,14 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /home/elixir/app
+hooks:
+  AfterInstall:
+    - location: .scripts/install.sh
+      timeout: 900
+      runas: elixir
+  ApplicationStart:
+    - location: .scripts/start.sh
+      timeout: 120
+      runas: elixir
