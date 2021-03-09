@@ -36,6 +36,7 @@ defmodule ElixirDemo.Mixfile do
       {:phoenix_pubsub, "~> 1.0"},
       {:phoenix_html, "~> 2.10"},
       {:phoenix_live_reload, "~> 1.0", only: :dev},
+      {:gettext, "~> 0.18.2"},
       {:cowboy, "~> 1.0"}
     ]
   end
